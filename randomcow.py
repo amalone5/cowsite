@@ -2,8 +2,9 @@ import random
 import subprocess
 import os
 
-cowpath="./cows.txt"
-index="./index.html"
+cowpath="/var/www/html/cows.txt"
+index="/var/www/html/index.html"
+#index="index.html"
 
 
 def getCows():
