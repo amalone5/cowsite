@@ -23,7 +23,7 @@ def buildtop():
     os.system("echo '<html lang=\"en\">' >> "+index)
     os.system("echo '<head>' >> "+index)
     os.system("echo '    <meta charset=\"UTF-8\">' >> "+index)
-    os.system("echo '    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">' >> "+index)
+    # os.system("echo '    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">' >> "+index)
     os.system("echo '    <title>Fortune</title>' >> "+index)
     os.system("echo '</head>' >> "+index)
     os.system("echo '<body>' >> "+index)
