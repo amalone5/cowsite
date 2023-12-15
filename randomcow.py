@@ -2,15 +2,9 @@ import random
 import os
 import sys
 
-# cowpath="/var/www/html/cows.txt"
-# index="/var/www/html/index.html"
-#index="index.html"
-#path to cowsite directory
 pathtodir=""
 cowpath=""
 index=""
-#index="index.html"
-
 
 def setPaths():
     if(len(sys.argv) <= 1):
@@ -35,7 +29,6 @@ def getCows():
         cows.append(cow.strip())
     return cows
 
-
 def getRandomCow():
     return random.choice(getCows())
 
@@ -59,4 +52,3 @@ def buildbottom():
 
 def helloworld():
     print("helloworld!")
-
