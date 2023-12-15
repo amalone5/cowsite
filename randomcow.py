@@ -1,11 +1,32 @@
 import random
-import subprocess
 import os
+import sys
 
-cowpath="/var/www/html/cows.txt"
-index="/var/www/html/index.html"
+# cowpath="/var/www/html/cows.txt"
+# index="/var/www/html/index.html"
+#index="index.html"
+#path to cowsite directory
+pathtodir=""
+cowpath=""
+index=""
 #index="index.html"
 
+
+def setPaths():
+    if(len(sys.argv) <= 1):
+        print("wrong args, exiting")
+        quit()
+    global pathtodir
+    global cowpath
+    global index
+    pathtodir=sys.argv[1]
+    cowpath=pathtodir+"/cows.txt"
+    index=pathtodir+"/index.html"
+
+def printpaths():
+    print("pathtodir: "+pathtodir)
+    print("cowpath: "+cowpath)
+    print("index: "+index)
 
 def getCows():
     cowfile = open(cowpath,"r")
@@ -36,7 +57,6 @@ def buildbottom():
     os.system("echo '</body>' >> "+index)
     os.system("echo '</html>' >> "+index)
 
+def helloworld():
+    print("helloworld!")
 
-buildtop()
-sendRandomCowToFile()
-buildbottom()
