@@ -1,4 +1,4 @@
 from randomcow import *
 
-setPaths()
-printpaths()
+clearindex()
+buildbutton()

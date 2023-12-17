@@ -50,5 +50,13 @@ def buildbottom():
     os.system("echo '</body>' >> "+index)
     os.system("echo '</html>' >> "+index)
 
+def buildbutton():
+    os.system("echo '<button type\"button\">Click Me!</button>' >> "+index)
+
+def clearindex():
+    os.system("echo '' > "+index)
+
 def helloworld():
     print("helloworld!")
+
+setPaths()
