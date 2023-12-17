@@ -1,6 +1,6 @@
 from randomcow import *
 
-setPaths()
+clearindex()
 buildtop()
 sendRandomCowToFile()
 buildbottom()

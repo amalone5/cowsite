@@ -33,7 +33,7 @@ def getRandomCow():
     return random.choice(getCows())
 
 def buildtop():
-    os.system("echo '<!DOCTYPE html>' > "+index)
+    os.system("echo '<!DOCTYPE html>' >> "+index)
     os.system("echo '<html lang=\"en\">' >> "+index)
     os.system("echo '<head>' >> "+index)
     os.system("echo '    <meta charset=\"UTF-8\">' >> "+index)
