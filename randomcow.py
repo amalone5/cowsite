@@ -17,6 +17,12 @@ def setPaths():
     cowpath=pathtodir+"/cows.txt"
     index=pathtodir+"/index.html"
 
+def showargs():
+    i=0
+    for arg in sys.argv:
+        print("arg"+str(i)+": "+arg)
+        i=i+1
+
 def printpaths():
     print("pathtodir: "+pathtodir)
     print("cowpath: "+cowpath)
@@ -37,7 +43,7 @@ def buildtop():
     os.system("echo '<html lang=\"en\">' >> "+index)
     os.system("echo '<head>' >> "+index)
     os.system("echo '    <meta charset=\"UTF-8\">' >> "+index)
-    os.system("echo '    <title>Fortune</title>' >> "+index)
+    os.system("echo '    <title>cowsite</title>' >> "+index)
     os.system("echo '</head>' >> "+index)
     os.system("echo '<body>' >> "+index)
 

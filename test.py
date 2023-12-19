@@ -1,4 +1,4 @@
 from randomcow import *
 
-clearindex()
-buildbutton()
+showargs()
+# buildbutton()
