@@ -65,4 +65,5 @@ def clearindex():
 def helloworld():
     print("helloworld!")
 
+# TODO: make button work
 setPaths()
