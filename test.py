@@ -1,4 +1,5 @@
 from randomcow import *
 
-showargs()
+a=buildwebsite
+a()
 # buildbutton()

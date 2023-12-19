@@ -15,7 +15,7 @@ def setPaths():
     global index
     pathtodir=sys.argv[1]
     cowpath=pathtodir+"/cows.txt"
-    index=pathtodir+"/index.html"
+    index=pathtodir+"/templates/index.html"
 
 def showargs():
     i=0
@@ -57,7 +57,9 @@ def buildbottom():
     os.system("echo '</html>' >> "+index)
 
 def buildbutton():
-    os.system("echo '<button type\"button\">Click Me!</button>' >> "+index)
+    button_html="<button> <a href=\"/my-link/\">Click me</a></button>"
+    # os.system("echo '<button type\"button\">Click Me!</button>' >> "+index)
+    os.system("echo '"+button_html+"' >> "+index)
 
 def clearindex():
     os.system("echo '' > "+index)
