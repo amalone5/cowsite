@@ -16,12 +16,4 @@ def my_link():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-# ----------------------
-# 
-
-clearindex()
-buildtop()
-sendRandomCowToFile()
-buildbutton()
-buildbottom()
+ 

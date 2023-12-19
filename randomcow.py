@@ -65,4 +65,12 @@ def clearindex():
 def helloworld():
     print("helloworld!")
 
-setPaths()
+def buildwebsite():
+    setPaths()
+    clearindex()
+    buildtop()
+    sendRandomCowToFile()
+    buildbutton()
+    buildbottom()
+    
+
