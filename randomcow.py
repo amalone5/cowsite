@@ -3,8 +3,8 @@ import os
 import sys
 
 pathtodir=""
-cowpath=""
-index=""
+cowpath="./cows.txt"
+index="./templates/index.html"
 
 def setPaths():
     if(len(sys.argv) <= 1):
@@ -68,7 +68,7 @@ def helloworld():
     print("helloworld!")
 
 def buildwebsite():
-    setPaths()
+    # setPaths()
     clearindex()
     buildtop()
     sendRandomCowToFile()
