@@ -2,7 +2,7 @@ from flask import Flask, render_template
 from randomcow import *
 
 
-buildwebsite2()
+#buildwebsite2()
 # TODO: make button work
 app = Flask(__name__)
 

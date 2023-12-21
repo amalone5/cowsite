@@ -108,8 +108,8 @@ cowcount=0
 def buildwebsite2():
     global cowcount
     # os.system('rm ./templates/cow'+str(cowcount)+".html")
-    cowcount = cowcount+1
     cowpath = "./templates/cow"+str(cowcount)+".html"
+    cowcount = cowcount+1
     buildtop(cowpath)
     sendRandomCowToFile(cowpath)
     buildbutton(cowpath)
