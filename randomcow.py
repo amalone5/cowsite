@@ -67,6 +67,9 @@ def clearindex():
 def removeindex(index):
     os.system("rm "+index)
 
+def removecows():
+    os.system("rm ./templates/cow*")
+
 cowcount=0
 
 def buildwebsite2():

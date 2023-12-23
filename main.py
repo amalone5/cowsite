@@ -16,6 +16,7 @@ localcowcount=0
 def my_link():
     global localcowcount
     print ('I got clicked!')
+    removecows()
     buildwebsite2()
     sitename="cow"+str(localcowcount)+".html"
     localcowcount = localcowcount+1

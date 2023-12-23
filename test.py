@@ -1,5 +1,7 @@
 from randomcow import *
 
+removecows()
+
 
 # for i in range(10):
     # buildwebsite2()
