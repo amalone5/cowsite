@@ -38,15 +38,6 @@ def getCows():
 def getRandomCow():
     return random.choice(getCows())
 
-def buildtop():
-    os.system("echo '<!DOCTYPE html>' >> "+index)
-    os.system("echo '<html lang=\"en\">' >> "+index)
-    os.system("echo '<head>' >> "+index)
-    os.system("echo '    <meta charset=\"UTF-8\">' >> "+index)
-    os.system("echo '    <title>cowsite</title>' >> "+index)
-    os.system("echo '</head>' >> "+index)
-    os.system("echo '<body>' >> "+index)
-
 def buildtop(index):
     os.system("echo '<!DOCTYPE html>' >> "+index)
     os.system("echo '<html lang=\"en\">' >> "+index)
@@ -56,32 +47,17 @@ def buildtop(index):
     os.system("echo '</head>' >> "+index)
     os.system("echo '<body>' >> "+index)
 
-
-def sendRandomCowToFile():
-    os.system("echo '<pre>' >> "+index)
-    os.system("fortune | cowsay -f "+getRandomCow()+" >> "+index)
-    os.system("echo '</pre>' >> "+index)
-
 def sendRandomCowToFile(index):
     os.system("echo '<pre>' >> "+index)
     os.system("fortune | cowsay -f "+getRandomCow()+" >> "+index)
     os.system("echo '</pre>' >> "+index)
 
-def buildbottom():
-    os.system("echo '</body>' >> "+index)
-    os.system("echo '</html>' >> "+index)
-
 def buildbottom(index):
     os.system("echo '</body>' >> "+index)
     os.system("echo '</html>' >> "+index)
 
-def buildbutton():
-    button_html="<button> <a href=\"/my-link/\">Click me</a></button>"
-    # os.system("echo '<button type\"button\">Click Me!</button>' >> "+index)
-    os.system("echo '"+button_html+"' >> "+index)
-
 def buildbutton(index):
-    button_html="<button> <a href=\"/my-link/\">Click me</a></button>"
+    button_html="<button> <a href=\"/cowlink/\">New fortune?</a></button>"
     # os.system("echo '<button type\"button\">Click Me!</button>' >> "+index)
     os.system("echo '"+button_html+"' >> "+index)
 
@@ -90,18 +66,6 @@ def clearindex():
 
 def removeindex(index):
     os.system("rm "+index)
-
-def helloworld():
-    print("helloworld!")
-
-def buildwebsite():
-    # setPaths()
-    clearindex()
-    buildtop()
-    sendRandomCowToFile()
-    buildbutton()
-    buildbottom()
-
 
 cowcount=0
 

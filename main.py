@@ -12,7 +12,7 @@ def index():
 
 localcowcount=0
 
-@app.route('/my-link/')
+@app.route('/cowlink/')
 def my_link():
     global localcowcount
     print ('I got clicked!')
