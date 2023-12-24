@@ -42,11 +42,21 @@ def buildtop(index):
     os.system("echo '<!DOCTYPE html>' >> "+index)
     os.system("echo '<html lang=\"en\">' >> "+index)
     os.system("echo '<head>' >> "+index)
-    os.system("echo '   <link rel=\"stylesheet\" href=\"../style.css\" />' >> "+index)
     os.system("echo '   <meta charset=\"UTF-8\">' >> "+index)
     os.system("echo '   <title>cowsite</title>' >> "+index)
+    os.system("echo '   <style>' >> "+ index)
+    os.system("echo '   div{' >> "+index)
+    os.system("echo '   height: 100vh;' >> "+index)
+    os.system("echo '   }' >> "+index)
+    os.system("echo '   </style>' >> "+index)
     os.system("echo '</head>' >> "+index)
     os.system("echo '<body>' >> "+index)
+
+def open_div(index):
+    os.system("echo '   <div>' >> "+index)
+
+def close_div(index):
+    os.system("echo '   </div>' >> "+index)
 
 def sendRandomCowToFile(index):
     os.system("echo '<pre>' >> "+index)
@@ -79,7 +89,9 @@ def buildwebsite2():
     cowpath = "./templates/cow"+str(cowcount)+".html"
     cowcount = cowcount+1
     buildtop(cowpath)
+    open_div(cowpath)
     sendRandomCowToFile(cowpath)
     buildbutton(cowpath)
+    close_div(cowpath)
     buildbottom(cowpath)
 
