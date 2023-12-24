@@ -42,8 +42,9 @@ def buildtop(index):
     os.system("echo '<!DOCTYPE html>' >> "+index)
     os.system("echo '<html lang=\"en\">' >> "+index)
     os.system("echo '<head>' >> "+index)
-    os.system("echo '    <meta charset=\"UTF-8\">' >> "+index)
-    os.system("echo '    <title>cowsite</title>' >> "+index)
+    os.system("echo '   <link rel=\"stylesheet\" href=\"../style.css\" />' >> "+index)
+    os.system("echo '   <meta charset=\"UTF-8\">' >> "+index)
+    os.system("echo '   <title>cowsite</title>' >> "+index)
     os.system("echo '</head>' >> "+index)
     os.system("echo '<body>' >> "+index)
 
