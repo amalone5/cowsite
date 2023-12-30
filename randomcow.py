@@ -46,8 +46,13 @@ def buildtop(index):
     os.system("echo '   <title>cowsite</title>' >> "+index)
     os.system("echo '   <style>' >> "+ index)
     os.system("echo '   div{' >> "+index)
-    os.system("echo '   height: 100vh;' >> "+index)
+    os.system("echo '   font-size:25px;' >> "+index)
+    os.system("echo '   color: brown;' >> "+index)
     os.system("echo '   }' >> "+index)
+#    os.system("echo '   button{
+#            height:50px;
+#            width:50px;
+#    }
     os.system("echo '   </style>' >> "+index)
     os.system("echo '</head>' >> "+index)
     os.system("echo '<body>' >> "+index)
