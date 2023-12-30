@@ -47,7 +47,6 @@ def buildtop(index):
     os.system("echo '   <style>' >> "+ index)
     os.system("echo '   div{' >> "+index)
     os.system("echo '   font-size:25px;' >> "+index)
-    os.system("echo '   color: brown;' >> "+index)
     os.system("echo '   }' >> "+index)
 #    os.system("echo '   button{
 #            height:50px;
